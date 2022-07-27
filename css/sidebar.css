@@ -37,6 +37,7 @@ body{
 	align-items: center;
 	opacity: 0;
 	pointer-events: none;
+	transition: all 0.5s ease;
 }
 
 .sidebar.active .logo_content .logo {
@@ -168,6 +169,7 @@ body{
 .sidebar .links_name {
 	opacity: 0;
 	pointer-events: none;
+	transition: all 0.5s ease;
 }
 
 .sidebar.active .links_name {
@@ -187,6 +189,11 @@ body{
 	position: relative;
 	padding: 10px 6px;
 	height: 60px;
+	background: none;
+	transition: all 0.4s ease;
+}
+
+.sidebar.active .profile_content .profile {
 	background: #1d1b31;
 }
 
@@ -233,17 +240,24 @@ body{
 	font-size: 20px;
 	border-radius: 12px;
 	text-align: center;
+	transition: all 0.4s ease;
+	background: #1d1b31;
 }
 
 .sidebar.active .profile #log_out {
 	left: 88%;
 }
 
+.sidebar.active .profile #log_out {
+	background: none;
+}
+
 .home_content {
 	position: absolute;
 	height: 100%;
-	width: calc(100% - 240px);
-	left: 240px;
+	width: calc(100% - 78px);
+	left: 78px;
+	transition: all 0.5s ease;
 }
 
 .home_content .text {
@@ -251,4 +265,9 @@ body{
 	font-weight: 500;
 	color: #1d1b31;
 	margin-top: 12px;
+}
+
+.sidebar.active ~ .home_content {
+	width: calc(100% - 240px);
+	left: 240px;
 }
