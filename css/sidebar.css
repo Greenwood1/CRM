@@ -25,5 +25,13 @@ body{
 }
 
 .sidebar .logo_content .logo {
+	color: #fff;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	align-items: center;
+}
 
+.logo_content .logo i {
+	
 }
