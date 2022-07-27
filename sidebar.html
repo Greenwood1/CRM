@@ -22,70 +22,70 @@
 			<li>
 					<i class='bx bx-search-alt-2'></i>
 					<input type="text" placeholder="Search...">
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Search</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-grid-alt'></i>
 					<span class="links_name">Dashboard</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Dashboard</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-user' ></i>
 					<span class="links_name">Users</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Users</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-chat' ></i>
 					<span class="links_name">Messages</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Messages</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-key'></i>
 					<span class="links_name">Credentials</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Credentials</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-pie-chart-alt-2' ></i>
 					<span class="links_name">Analytics</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Analytics</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-list-check'></i>
 					<span class="links_name">Wish List</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Wish List</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-book-content'></i>
 					<span class="links_name">Tutorials</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Tutorials</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-link'></i>
 					<span class="links_name">Links</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Links</span>
 			</li>
 			<li>
 				<a href="#">
 					<i class='bx bx-cog' ></i>
 					<span class="links_name">Setting</span>
 				</a>
-				<!--<span class="tooltipe">Dashboard</span>-->
+				<span class="tooltipe">Setting</span>
 			</li>
 		</ul>
 		<div class="profile_content">
@@ -101,5 +101,22 @@
 			</div>
 		</div>
 	</div>
+	<div class="home_content">
+		<div class="text">Home Content</div>
+	</div>
+
+	<script>
+	 let btn = document.querySelector("#btn");
+	 let sidebar = document.querySelector(".sidebar");	
+	 let searchBtn = document.querySelector(".bx-search-alt-2");	
+
+	 btn.onclick = function() {
+		sidebar.classList.toggle("active");
+	 }
+	 searchBtn.onclick = function() {
+		sidebar.classList.toggle("active");
+	 }
+
+	</script>
 </body>
 </html>
