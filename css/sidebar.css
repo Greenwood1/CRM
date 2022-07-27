@@ -42,3 +42,28 @@ body{
 	font-weight: 400;
 }
 
+.sidebar #btn {
+	position: absolute;
+	color: #fff;
+	left: 90%;
+	top: 6px;
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	transform: translateX(-50%);
+}
+
+.sidebar ul {
+	margin-top: 20px;
+}
+
+.sidebar ul li {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin: 0 5px;
+	list-style: none;
+}
+
